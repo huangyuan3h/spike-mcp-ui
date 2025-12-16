@@ -1,0 +1,24 @@
+{
+  "name": "spike-mcp-ui",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -ws",
+    "dev:host": "npm run dev -w apps/host",
+    "dev:ui": "npm run dev -w apps/ui",
+    "dev:bridge": "npm run dev -w apps/bridge",
+    "dev:server": "npm run dev -w apps/server",
+    "build": "npm run build -ws",
+    "test": "npm run test -ws --if-present"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Spike repo to learn MCP-UI (MCP Apps) with TypeScript",
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
+}
